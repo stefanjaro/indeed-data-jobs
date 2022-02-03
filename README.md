@@ -16,6 +16,8 @@ Here's how it works:
 * I filled in the "Where" field with the name of a state and repeated the title searches for each of the 50 US states.
 * On each search results page, I scraped the number of results returned. They're returned in the form of, for example, "Page 1 of 580 jobs" and appears right above the listing of job ads.
 
+The scrape was run on the 19th of January 2022. All data displayed below was extracted on this date.
+
 ## Findings
 
 The Jupyter Notebook titled `1.analysis-and-visualization.ipynb` contains the scraped data displayed in both tabular form as well as in interactive choropleth maps.
@@ -92,3 +94,4 @@ There are several caveats to this analysis as it is rudimentary:
 1. In my opinion, the terms "data engineer" and "data scientist" are still loosely defined. Depending on the company, a data scientist may be expected to perform some ETL and a data engineer may be expected to use machine learning APIs. You'd have to delve into the job descriptions of each ad to determine which ones are "pure" roles and which are more "hybrid".
 2. I excluded the title "data analyst" from this analysis as it is far more loosely defined than the other two. While some data analysts could be data scientists, I've seen the term used by people who create and maintain dashboards, run SQL queries, and run analyses on nothing but Excel.
 3. There may be other titles that fall under the general title of "data scientist" that I did not account for such as "machine learning engineer" or "NLP engineer".
+4. It's entirely possible that jobs outside of the state entered into the "Where" field were displayed in the search results as well. Therefore these would've been factored into the state totals in the results above.
